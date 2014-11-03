@@ -27,7 +27,6 @@
     100% {transform:rotate(360deg);}
 }
 
-<<<<<<< HEAD
 @-webkit-keyframes flechaAnimationP1{
 	0% 		{transform:rotate(0deg);}
 	20% 	{transform:rotate(10deg);}
@@ -61,14 +60,6 @@
 	50% 	{bottom: 0;}
 	75% 	{bottom: 7px;}
 	100% 	{bottom: 0;}
-=======
-@-webkit-keyframes flechaAnimation{
-	from { bottom:0; } to { bottom:7px;}
-}	
-
-@keyframes flechaAnimation{
-	from { bottom:0; } to { bottom:7px;}
->>>>>>> origin/master
 }
 
 @media screen and (max-width:1200px){
@@ -98,7 +89,6 @@
 			/* margin: 0 auto; */
 			width: 100%;
 			text-align: center;
-<<<<<<< HEAD
 			-webkit-animation:flechaAnimationP2 5s ;
 			-moz-animation:flechaAnimationP2 5s ;
 			-ms-animation:flechaAnimationP2 5s ;
@@ -109,18 +99,10 @@
 			-ms-animation-iteration-count: infinite;
 			-o-animation-iteration-count: infinite;
 			animation-iteration-count: infinite;
-=======
-			
- 			-webkit-animation: flechaAnimation 0.5s linear 0s infinite alternate;
-			-moz-animation:flechaAnimation 1s linear 0s infinite alternate;
-			-ms-animation:flechaAnimation 1s linear 0s infinite alternate ;
-			-o-animation:flechaAnimation 1s linear 0s infinite alternate ;
-			animation:flechaAnimation 1s linear 0s infinite alternate;
->>>>>>> origin/master
 			
  		}
  		.arrow figure img{
- 			width: 150px;
+ 			width: 200px;
 			opacity: 0.7;
  		}
 		.arrow figure{
