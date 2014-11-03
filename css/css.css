@@ -27,16 +27,39 @@
     100% {transform:rotate(360deg);}
 }
 
-@-webkit-keyframes flechaAnimation{
-	0% 		{bottom: 0px;}
-	50%		{bottom: 7px;}
-	100% 	{bottom: 0px;}
+@-webkit-keyframes flechaAnimationP1{
+	0% 		{transform:rotate(0deg);}
+	20% 	{transform:rotate(10deg);}
+	40% 	{transform:rotate(0deg);}
+	60% 	{transform:rotate(-10deg);}
+	80% 	{transform:rotate(0deg);}
+	100% 	{transform:rotate(0deg);}
+	
 }	
 
-@keyframes flechaAnimation{
-	0% 		{bottom: 0px;}
-	50%		{bottom: 7px;}
-	100% 	{bottom: 0px;}
+@keyframes flechaAnimationP1{
+	0% 		{transform:rotate(0deg);}
+	20% 	{transform:rotate(10deg);}
+	40% 	{transform:rotate(0deg);}
+	60% 	{transform:rotate(-10deg);}
+	80% 	{transform:rotate(0deg);}
+	100% 	{transform:rotate(0deg);}
+}
+
+@-webkit-keyframes flechaAnimationP2{
+	0% 		{bottom: 0;}
+	25% 	{bottom: 7px;}
+	540% 	{bottom: 0;}
+	75% 	{bottom: 7px;}
+	100% 	{bottom: 0;}
+}	
+
+@keyframes flechaAnimationP2{
+	0% 		{bottom: 0;}
+	25% 	{bottom: 7px;}
+	50% 	{bottom: 0;}
+	75% 	{bottom: 7px;}
+	100% 	{bottom: 0;}
 }
 
 @media screen and (max-width:1200px){
@@ -66,22 +89,36 @@
 			/* margin: 0 auto; */
 			width: 100%;
 			text-align: center;
-			-webkit-animation:flechaAnimation 2.5s ;
-			-moz-animation:flechaAnimation 2.5s ;
-			-ms-animation:flechaAnimation 2.5s ;
-			-o-animation:flechaAnimation 2.5s ;
-			animation:flechaAnimation 2.5s ;
+			-webkit-animation:flechaAnimationP2 5s ;
+			-moz-animation:flechaAnimationP2 5s ;
+			-ms-animation:flechaAnimationP2 5s ;
+			-o-animation:flechaAnimationP2 5s ;
+			animation:flechaAnimationP2 5s ;
 			-webkit-animation-iteration-count: infinite;
 			-moz-animation-iteration-count: infinite;
 			-ms-animation-iteration-count: infinite;
 			-o-animation-iteration-count: infinite;
-			animation-iteration-count: infinite; 
+			animation-iteration-count: infinite;
+			
  		}
  		.arrow figure img{
  			width: 200px;
 			opacity: 0.7;
  		}
-
+		.arrow figure{
+			width: 80%;
+			display: inline-block;
+			-webkit-animation:flechaAnimationP1 5s ;
+			-moz-animation:flechaAnimationP1 5s ;
+			-ms-animation:flechaAnimationP1 5s ;
+			-o-animation:flechaAnimationP1 5s ;
+			animation:flechaAnimationP1 5s ;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			animation-iteration-count: infinite; 
+		}
 	body{
 			
 		}
