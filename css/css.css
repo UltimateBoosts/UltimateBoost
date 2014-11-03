@@ -29,17 +29,7 @@
 
 @media screen and (max-width:1200px){
 
-	 		 .Contenedor-logo{
-
-		margin: 0 -4.4em;
-		
-		
-		position: relative;
-		width: 100%;
-		height: 100px;
-		top: 100px;
-		text-align: center;	 
-		}
+	 	
 
 		.Titulos{
 			display: inline-block; 
@@ -52,13 +42,7 @@
 
 @media screen and (min-width:1200px){
 
-	 	
-.contenedor-logos {
 
-
-display: none;
-
-}
 	
 }
 
@@ -69,19 +53,44 @@ display: none;
 	body{
 			
 		}
+		/*Cambios En Google*/
+		.Contenedor-logoPadre{
+			width: 100%;
+			padding: 13% 0 13% 0;
+			margin: 0;
+			text-align: center;
+		}
+		.Contenedor-logoHijo{
+			display: inline-block;
+			width: 80%;
+			/* text-align: center; */
+			padding: 5% 5% 5% 5%;
+		}
+		.Contenedor-logo{
+			display: inline-block;
+			/* position: relative; */
+			/* width: 80%; */
+			/* position: inherit; */
+			position: inherit;
+			/* display: block; */
+			width: 140px;
+			height: 140px;
+		}
+
+
+
 	.Contenedor-logo figure{
-		display: inline-block;	
-		margin: 0;
+		
 		position: absolute;
-		width: 139px;
+		
 		
 	}
 	.Contenedor-logo figure img{
-			position: relative;
-		top: 2px;
-		left: -1px;
-		width: 100%;
-		height:100%;
+			
+	}
+	.Contenedor-titulo h1{
+		font-size: 5em;
+		color: white;
 	}
 
 	.contenedor-logos {
@@ -99,9 +108,7 @@ display: none;
 		    vertical-align: middle;
 		}
 		.Contenedor-logoImg{
-			position: relative;
-		float: right;
-		display: inline-block;
+		
 		}
 		#Contenedor, body, html {
 				height: 100%;
