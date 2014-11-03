@@ -48,7 +48,17 @@
 
 
 
- 		
+ 		.arrow{
+ 			position: absolute;
+			bottom: 0;
+			/* margin: 0 auto; */
+			width: 100%;
+			text-align: center;
+ 		}
+ 		.arrow figure img{
+ 			width: 200px;
+			opacity: 0.5;
+ 		}
 
 	body{
 			
@@ -108,7 +118,7 @@
 		    vertical-align: middle;
 		}
 		.Contenedor-logoImg{
-			
+
 		
 		}
 		#Contenedor, body, html {
