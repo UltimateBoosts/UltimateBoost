@@ -1,5 +1,5 @@
 	/*Animaciones*/
-	@-webkit-keyframes amination{
+@-webkit-keyframes amination{
 	0%   {transform:rotate(0deg);}
     100% {transform:rotate(360deg);}
 }
@@ -83,45 +83,6 @@ display: none;
 		width: 100%;
 		height:100%;
 	}
-	
-	header{
-		margin: 0;
-		width: 100%;
-		width: 100%;
-		height: 80px;
-		z-index: 1100;
-		
-	}
-	nav{
-		background: #070708;
-		padding: 0 5em 0 0.5em;
-		position: relative;
-		text-align: right;
-		opacity: 0.5;
-	}
-	nav ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-}
-	nav ul li {
-		display: inline-block;
-		margin: 0;
-	}
-	nav ul li a {
-		color: white;
-		display: block;
-		padding: 1.5em;
-		text-decoration: none;
-		-webkit-transition: 0.3s;
-		-moz-transition: 0.3s;
-		-ms-transition: 0.3s;
-		-o-transition: 0.3s;
-		transition: 0.3s;
-	}	
-	nav ul li a:hover {
-		background: #344B54;
-	}
 
 	.contenedor-logos {
 		display: table;
@@ -172,6 +133,47 @@ display: none;
 		text-align: center;
 		}
 
+	
+	header{
+		margin: 0;
+		width: 100%;
+		width: 100%;
+		height: 80px;
+		z-index: 1100;
+		
+	}
+	nav{
+		background: #070708;
+		padding: 0 5em 0 0.5em;
+		position: relative;
+		text-align: right;
+		opacity: 0.5;
+	}
+	nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+}
+	nav ul li {
+		display: inline-block;
+		margin: 0;
+	}
+	nav ul li a {
+		color: white;
+		display: block;
+		padding: 1.5em;
+		text-decoration: none;
+		-webkit-transition: 0.3s;
+		-moz-transition: 0.3s;
+		-ms-transition: 0.3s;
+		-o-transition: 0.3s;
+		transition: 0.3s;
+	}	
+	nav ul li a:hover {
+		background: #344B54;
+	}
+
+	
 	 .Logo-parte1 img{
 		
 		-webkit-animation: amination 5s;
@@ -237,11 +239,12 @@ background-position: center center;
 height: 100%;
 z-index: 2;
 }
-.Titulos{
-	
-}
 section{
 	background: red;
 	width: 100%;
 	height: 200px;
+}
+
+.Titulos{
+	
 }
