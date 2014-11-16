@@ -351,10 +351,21 @@ header
 {
 	display: none;
 }
+.Text-lema h2 
+{
 
+	font-size: 0.8em;
+}
+.Text-lema h3 
+{
+	font-size: 0.5em;
+}
+.Contenedor-lema {
+height: 210px;
+}
 .Contenedor-logoPadre
 {
-	padding: 16% 0 13% 0;
+	padding: 5% 0 0 0;
 }
 .Contenedor-logoHijo
 {
@@ -381,7 +392,9 @@ header
 .Text-lema {
 display: inline-block;
 padding: 10% 0 0 0;
+
 }
+
 
 
 }
