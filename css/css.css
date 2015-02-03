@@ -123,8 +123,9 @@
 			/* position: inherit; */
 			position: inherit;
 			/* display: block; */
-			width: 140px;
-			height: 140px;
+			width: 107px;
+			height: 100px;
+			float: left;
 		}
 
 
@@ -132,10 +133,14 @@
 	.Contenedor-logo figure{
 		
 		position: absolute;
+		width: 100%;
+		height: 100%;
 		
 		
 	}
 	.Contenedor-logo figure img{
+		width: 100%;
+		height: 100%;
 			
 	}
 	.Contenedor-titulo h1{
@@ -183,7 +188,6 @@
 			
 		
 
-	
 		.Contenedor-logoTitulo{
 			font-size: 5em;
 		color: #fff;
@@ -195,29 +199,38 @@
 	
 	header{
 		margin: 0;
+		/* width: 100%; */
 		width: 100%;
-		width: 100%;
-		height: 80px;
+		height: 89px;
 		z-index: 1100;
+		padding: 15px 0;
+		background: #070708;
+		margin: 0 auto;
+
+
 		
 	}
-	nav{
+	.Header nav{
 		background: #070708;
-		padding: 0 5em 0 0.5em;
+		/* padding: 0 5em 0 0.5em; */
 		position: relative;
 		text-align: right;
-		opacity: 0.5;
+		/* opacity: 0.5; */
+		height: 100%;
+		width: 1007px;
+		display: block;
+		/* margin: 0; */
 	}
-	nav ul {
+	.Header nav ul {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 }
-	nav ul li {
+	.Header nav ul li {
 		display: inline-block;
 		margin: 0;
 	}
-	nav ul li a {
+	.Header nav ul li a {
 		color: white;
 		display: block;
 		padding: 1.5em;
@@ -227,8 +240,10 @@
 		-ms-transition: 0.3s;
 		-o-transition: 0.3s;
 		transition: 0.3s;
+		height: 33px;
+
 	}	
-	nav ul li a:hover {
+	.Header nav ul li a:hover {
 		background: #344B54;
 	}
 
@@ -287,7 +302,7 @@ overflow: hidden;
 z-index: -1;
 }
 .home-img-src {
-background-image: url(../img/12.jpg);
+background-image: url(../img/milkyway5.jpg);
 background-repeat: no-repeat;
 background-position: center center;
 background-size: cover;
