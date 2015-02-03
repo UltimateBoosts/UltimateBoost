@@ -148,7 +148,7 @@ header
 	display inline-block
 	position relative
 	overflow hidden
-	width 75%
+	width 1010px
 	height 102px
 	overflow hidden
 .Header 
@@ -159,6 +159,7 @@ header
 		height 100%
 		/* width: 100% */
 		display inline-block
+		right 0
 	
 .Header 
 	nav 
@@ -166,6 +167,7 @@ header
 			list-style none
 			margin 0
 			padding 0
+			
 			li 
 				display inline-block
 				margin 0
@@ -216,14 +218,15 @@ header
 	z-index -1
 
 .home-img-src 
-	background-repeat no-repeat
-	background-position center center
-	-webkit-background-size cover
-	-moz-background-size cover
-	background-size cover
-	height 100%
-	background-attachment fixed
-	background linear-gradient(150deg,rgba(83, 105, 218, 0.34) 30%,rgba(30, 32, 176, 0.16)70%),url("../img/milkyway5.jpg")
+	background-image:url("../img/milkyway5.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	height: 100%;
+	background-attachment: fixed;
+
 
 .home-img-textura 
 	background-position center center
@@ -231,19 +234,20 @@ header
 	z-index 2
 
 .Contenedor-lema
-	background-image url("../img/3.jpg")
+	background-image url("../img/milkyway4.jpg")
 	background-repeat no-repeat
 	background-position center center
 	background-size cover
 	height 400px
 	position absolute
 	width 100%
+	filter blur(5px)
 
 
 .Lema
 	position relative
 	text-align center
-	background rgba(0, 0, 0, 0.57)
+	background rgba(0, 0, 0, 0.90)
 	height 100%
 
 .Text-lema 
@@ -326,10 +330,10 @@ header
 		padding 10% 0 0 0
 
 	.home-img-src 
-		background-image url("../img/thumps/12.jpg")
+		background-image:url("../img/milkyway5.jpg");
 
 	.Contenedor-lema
-		background-image url("../img/thumps/3.jpg")
+		background-image url("../img/milkyway4.jpg")
 
 
 
