@@ -1,5 +1,9 @@
 @import "normalize.styl"
 @import "nib"
+@import "nib/vendor"
+
+vendor-prefixes = o ms moz webkit official
+
 
 @keyframes amination
 	0%
@@ -373,7 +377,7 @@ header
 .contenedor
 	position relative;	
 .desarrolloweb
-	background-image url("../img/bg-fast.jpg")
+	background-image none
 	height: 100%;
 	width: 100%;
 	background-size: cover;
@@ -383,7 +387,23 @@ header
 	text-align: center;
 	position: relative;	
 	background-size 100% 100%	
+.fondoServicios	
+	-webkit-filter blur(2px)
+	-ms-filter blur(2px)
+	-o-filter blur(2px)
+	filter blur(2px)
 
+#imgfs1
+	position absolute
+	left 0px
+	top 0px
+	z-index -1
+	
+#imgfs2, #imgfs3 
+	position relative
+	left 0px;
+	top -112px;
+	z-index -1
 	
 @media screen and (max-width:1200px)
 
