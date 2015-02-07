@@ -483,6 +483,10 @@ header
 	position: absolute;
 	left: 100px;
 	top: 10px;
+.menu-movil
+	display none
+.Menu
+	display block !important			
 	
 
 	
@@ -492,13 +496,32 @@ header
 		display inline-block
 		top 6.5em
 		position relative
-	
+		
+@media screen and (max-width:1030px)
+	.contenedor-head
+		width: 100%;	
 
 @media screen and (max-width:800px)
 	body
 		font-size 16px
+	.menu-movil
+		display: inline-block;
+		position: relative;
+		color: #fff;
+		float: right;
+		right: 4%;
+		/* width: 50px; */
+		/* height: 50px; */
+		top: 8px;
+		.col
+			height: 3px;
+			width: 26px;
+			margin-bottom: 7px;
+			background-color: #fff;
+			display: block;	
 
-
+	.Menu
+		display none !important	
 
 	.Contenedor-logoPadre
 		padding 5% 0 0 0
