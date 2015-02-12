@@ -115,7 +115,7 @@
 			</article>
 	</div>
 	</section>
-	<section class="servicios modulo">
+	<section id="servicios" class="servicios modulo">
     <div class="contenedor">
         <a class="arrow-left" href="#"></a> 
         <a class="arrow-right" href="#"></a>
@@ -136,7 +136,7 @@
             	<h1 >Branding </h1>
             	<figure>
             		
-            		<img src="img/posiblebrand.png" alt="" width="160" height="160" >
+            		<img src="img/BrandingLogo3.png" alt="" width="160" height="160" >
             	</figure>
             	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
             	</article>
@@ -156,7 +156,7 @@
         <div class="pagination"></div>
       </div>  
   </section>
-  	
+  <h6 style="margin: 0;">solo pa manquear</h6>
 		
 	
 <script src="js/jquery-1.10.1.min.js"></script>
@@ -176,7 +176,29 @@
     e.preventDefault()
     mySwiper.swipeNext()
   })
+  $(function(){
+  	var altura =document.body.scrollHeight;
+  	var altScroll= altura*37.0515/100;
+  	alert(altScroll);
+  	var altReal=Number (altura)- Number(altScroll);
+  	alert(altReal);
+  	//alert(altura);
+  	
+  	$(window).scroll(function() {
+  		
+  		
+  		var scrolltop =$(this).scrollTop();
+  		
+  		if(scrolltop > altReal){
+  			
+  		mySwiper.swipeNext();
 
+  		$('body,html').stop(true,true).animate({scrollTop: $("#servicios").offset().top},10000);
+
+  		}
+  		
+  	})
+  });
 
 
   </script>	
