@@ -156,7 +156,7 @@
         <div class="pagination"></div>
       </div>  
   </section>
-  <h6 style="margin: 0;">solo pa manquear</h6>
+
 		
 	
 <script src="js/jquery-1.10.1.min.js"></script>
@@ -176,29 +176,7 @@
     e.preventDefault()
     mySwiper.swipeNext()
   })
-  $(function(){
-  	var altura =document.body.scrollHeight;
-  	var altScroll= altura*37.0515/100;
-  	alert(altScroll);
-  	var altReal=Number (altura)- Number(altScroll);
-  	alert(altReal);
-  	//alert(altura);
-  	
-  	$(window).scroll(function() {
-  		
-  		
-  		var scrolltop =$(this).scrollTop();
-  		
-  		if(scrolltop > altReal){
-  			
-  		mySwiper.swipeNext();
-
-  		$('body,html').stop(true,true).animate({scrollTop: $("#servicios").offset().top},10000);
-
-  		}
-  		
-  	})
-  });
+ 
 
 
   </script>	
