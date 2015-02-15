@@ -313,7 +313,6 @@ header
 		
 .servicios
 	overflow: hidden;
-	height:100%;
 	color white
 	position relative
 .serviciosp
@@ -337,37 +336,17 @@ header
 	position: relative;
 	box-shadow: 0px 0px 5px #000;
 
-.arrow-left 
-	background: url("../img/arrows.png") no-repeat left top;
-	position: absolute;
-	left: 10px;
-	top: 50%;
-	margin-top: -15px;
-	width: 17px;
-	height: 30px;
-	z-index: 2
-
-.arrow-right 
-	background: url("../img/arrows.png") no-repeat left bottom;
-	position: absolute;
-	right: 10px;
-	top: 50%;
-	margin-top: -15px;
-	width: 17px;
-	height: 30px;
-	z-index: 2
-
-
-.swiper-container
-	background black 
-	
-		
 .servicios
 	article
-		padding-top: 10%;
+		padding-top: 25%;
 	p
-		padding: 0 30%;
-		
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		margin: 0;
+		padding: 68% 0;
+				
 
 .content-slide 
 	padding: 20px;
@@ -376,27 +355,8 @@ header
 .title
 	font-size: 25px;
 	margin-bottom: 10px;
-
-.pagination 
-	position: absolute;
-	left: 0;
-	text-align: center;
-	bottom:5px;
-	width: 100%;
-	z-index: 1;
-
-.swiper-pagination-switch 
-	display: inline-block;
-	width: 10px;
-	height: 10px;
-	border-radius: 10px;
-	background: #999;
-	box-shadow: 0px 1px 2px #555 inset;
-	margin: 0 3px;
-	cursor: pointer;
-
-.swiper-active-switch 
-	background: #fff;
+.display-none
+	display none
 
 .section
 	position: relative;
@@ -408,6 +368,10 @@ header
 .desarrolloweb
 	text-align: center;
 	position: relative;	
+	display: inline-block;
+	width: 33.3%
+	float left
+	height 600px	
 	&:before
 		content:''
 		position: absolute
@@ -421,9 +385,15 @@ header
 		background-repeat: no-repeat
 		background-position: center center
 		background-size 100% 100%
+	p
+		background rgba(32, 18, 79, 0.6)
 .branding
 	text-align: center;
-	position: relative;	
+	position: relative;
+	display: inline-block;
+	width: 33.3%
+	float left
+	height 600px	
 	&:before
 		content:''
 		position: absolute
@@ -437,9 +407,15 @@ header
 		background-repeat: no-repeat
 		background-position: center center
 		background-size 100% 100%
+	p
+		background rgba(9, 70, 68, 0.6)
 .posi
 	text-align: center;
 	position: relative;	
+	display: inline-block;
+	width: 33.3%
+	float left
+	height 600px		
 	&:before
 		content:''
 		position: absolute
@@ -453,6 +429,8 @@ header
 		background-repeat: no-repeat
 		background-position: center center
 		background-size 100% 100%
+	p
+		background rgba(115, 81, 14, 0.6)
 .boton-land
 	border: 2px solid white;
 	padding: 0.5em 0.8em;
@@ -568,6 +546,28 @@ header
 		top: 4px;
 		img
 			width: 78px;
+			
+	.desarrolloweb
+		background-image: linear-gradient(150deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/thumps/fondoServicios3.jpg");
+	.branding
+		background-image: linear-gradient(150deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/thumps/ImgServiciosBranding2.jpg");
+	.posi
+		background-image: linear-gradient(150deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/thumps/fondoServicios4.jpg");		
+	.desarrolloweb
+	.branding
+	.posi
+		display block
+		width 100%
+		height 500px
+		p
+			width: 100%;
+			position: relative;
+			padding:0;
+			display block !important
+			background none
+			
+					
+		
 			
 				
 	

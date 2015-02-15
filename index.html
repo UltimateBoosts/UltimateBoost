@@ -8,7 +8,6 @@
 
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400italic,100,300,700,400' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/idangerous.swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -117,68 +116,44 @@
 	</section>
 	<section id="servicios" class="servicios modulo">
     <div class="contenedor">
-        <a class="arrow-left" href="#"></a> 
-        <a class="arrow-right" href="#"></a>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide desarrolloweb" > 
+       
+            <div class="aniServicios desarrolloweb" > 
             	<article>
-            		<h1 >Desarrollo y Diseño Web </h1> 
-		            	<figure>
+            		<h1 >Desarrollo</h1> 
+		            	<figure class="logo">
 		            		
 		            		<img src="img/DesarrolloLogo2.png" alt="" width="160" height="160" >
 		            	</figure>
-		            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
+		            	<p class="display-none animation-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
             	</article>
             </div>
-            <div class="swiper-slide center branding" > 
+            <div class="aniServicios branding" > 
             	<article>
             	<h1 >Branding </h1>
-            	<figure>
+            	<figure class="logo">
             		
             		<img src="img/BrandingLogo3.png" alt="" width="160" height="160" >
             	</figure>
-            	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
+            	<p class="display-none animation-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
             	</article>
             </div>
-            <div class="swiper-slide center posi" >
+            <div class="aniServicios posi" >
             	<article>
             	<h1 >Posicionamiento </h1>
-               	<figure>
+               	<figure class="logo">
                		
                		<img src="img/posibleseo.png" width="160" height="160" alt="">
                	</figure>
-               	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
+               	<p class="display-none animation-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit eligendi voluptate facilis tempora ducimus et illum unde excepturi repellat eveniet, reiciendis optio sapiente blanditiis vel ab nam, magni eos.</p>
             	</article>
             </div>
-          </div>
-        </div>
-        <div class="pagination"></div>
+         
       </div>  
   </section>
 
 		
 	
 <script src="js/jquery-1.10.1.min.js"></script>
-<script src="js/idangerous.swiper.min.js"></script>
-<script>
-  var mySwiper = new Swiper('.swiper-container',{
-    pagination: '.pagination',
-    loop:true,
-    grabCursor: true,
-    paginationClickable: true
-  })
-  $('.arrow-left').on('click', function(e){
-    e.preventDefault()
-    mySwiper.swipePrev()
-  })
-  $('.arrow-right').on('click', function(e){
-    e.preventDefault()
-    mySwiper.swipeNext()
-  })
- 
-
-
-  </script>	
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
