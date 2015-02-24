@@ -6,6 +6,73 @@
 
 vendor-prefixes = o ms moz webkit official
 
+@keyframes poro1
+	0%
+		top -66% 
+		left 10%
+	25%
+		top -20% 
+		left 101%
+	50%
+		top -20% 
+		left -1%
+	75%
+		top -55% 
+		left 40%
+	100%
+		top -66% 
+		left 10%
+		
+@keyframes poro2
+	0%
+		top -66% 
+		left 101%
+	25%
+		top -60% 
+		left 5%
+	50%
+		top -30% 
+		left 50%
+	75%
+		top -25% 
+		left 40%
+	100%
+		top -66% 
+		left 101%
+
+@keyframes poro3
+	0%
+		top -66% 
+		left 50%
+	25%
+		top -30% 
+		left -1%
+	50%
+		top -40% 
+		left 101%
+	75%
+		top -25% 
+		left 40%
+	100%
+		top -66% 
+		left 50%
+		
+@keyframes poro4
+	0%
+		top -30% 
+		left 50%
+	25%
+		top -66% 
+		left 90%
+	50%
+		top -40% 
+		left 60%
+	75%
+		top -30% 
+		left 100%
+	100%
+		top -30% 
+		left 50%
 
 @keyframes amination
 	0%
@@ -351,7 +418,42 @@ header
 		top: 0;
 		margin: 0;
 		padding: 68% 0;
-				
+
+.poritos
+	width 10px
+	height 10px
+	top -66% 
+	left 10%
+	background-image url("../img/poritos.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	position relative
+	opacity .5
+
+.p1
+	animation-name poro1
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+.p2
+	animation-name poro2
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+
+.p3
+	animation-name poro3
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	
+.p4
+	animation-name poro4
+	animation-duration: 50s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;				
 
 .content-slide 
 	padding: 20px;
