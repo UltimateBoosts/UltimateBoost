@@ -1,8 +1,6 @@
 $(function ()
 	{
-		$(".aniServicios").hover(function(){
-			$(this).find("p").show("slide");
-		},function(){$(this).find("p").hide("slide");});
+		
 
 		
 		var altoPantalla =screen.height;
@@ -28,12 +26,12 @@ $(function ()
   			}
   			if(scrolltop > altoMenu){
 
-  				$(".Fixed").show("slow");
+  				$("#fixed").addClass("fixmenu-stick");
 
   			}
   			if(scrolltop < altoMenu){
 
-  				$(".Fixed").hide("slow");
+  				$("#fixed").removeClass("fixmenu-stick");
 
   			}
   		
