@@ -5,6 +5,7 @@
 
 
 vendor-prefixes = o ms moz webkit official
+rojo = #00FC9D
 
 
 
@@ -208,8 +209,8 @@ body
 .Contenedor-titulo 
 	h1
 		font-size 3.2em
-		color white
-		font-weight lighter
+		color rojo
+		font-weight 300
 		margin: 0;
 		text-transform uppercase
 	h2
@@ -263,7 +264,7 @@ header
 	width 100%
 	
 	z-index 1100
-	padding .5em 0
+	padding 0.2em 0 0 0
 	/* background: #070708; */
 	margin 0 auto
 	text-align center
@@ -272,7 +273,7 @@ header
 	position relative
 	overflow hidden
 	width 1010px
-	height 76px
+	height 75px
 	overflow hidden
 .Header 
 	nav
@@ -324,6 +325,11 @@ header
 					/* line-height: 3; */
 					font-weight bold
 					text-transform uppercase
+					padding: 5px 0;
+			.current-link
+				border-bottom: 2px solid rojo;
+				opacity: 0.9;
+
 					
 
 .Logo-parte1 
@@ -747,6 +753,11 @@ header
 			padding:0;
 			display block !important
 			background none
+			
+	.contenedor-head
+		height 50px
+		
+
 			
 					
 		
