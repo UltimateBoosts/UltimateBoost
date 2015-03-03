@@ -466,7 +466,7 @@ header
 		content ""
 		background-position center center
 		height 100%
-		z-index -2
+		z-index -3
 		background: linear-gradient(rgba(6, 11, 39, 0.8),rgba(0,0,0,0));
 .serviciosp
 	color white
@@ -526,55 +526,44 @@ header
 	overflow hidden
 	text-align center	
 .aniServicios
-	font-size 16px
-.desarrolloweb
-	text-align: center;
-	position: relative;	
-	display: inline-block;
-	width: 400px
-	height 400px
-	background-image:url("../img/fondoServicios3_gray.png");
-	background-repeat: no-repeat
-	background-position: center center
-	background-size 100% 100%	
-	transition all 1s ease-in-out 0s	
-	&:hover
-		cursor pointer
-		background-image:url("../img/fondoServicios3.png");
-	&:hover .description
-		background-color rojo
-		
-			
-.branding
+	font-size: 16px;
 	text-align: center;
 	position: relative;
 	display: inline-block;
 	width: 400px
 	height 400px
-	background-image: url("../img/ImgServiciosBranding2_gray.png");	
 	background-repeat: no-repeat
 	background-position: center center
 	background-size 100% 100%
-	transition all 1s ease-in-out 0s
+	transition all 1s ease-in-out 0s	
+	&:hover .glass
+		opacity 1 !important
+	span
+		position: absolute;
+		top: 0;
+		left: 0;
+	.glass 
+		opacity 0
+		z-index -1
+		transition all 0.35s ease-in-out 0s
+	.base
+		z-index -2	
+.desarrolloweb
 	&:hover
 		cursor pointer
-		background-image: url("../img/ImgServiciosBranding2.png");			
+	&:hover .description
+		background-color rojo
+		
+			
+.branding
+	&:hover
+		cursor pointer
 	&:hover .description
 		background-color verde
+		
 .posi
-	text-align: center;
-	position: relative;	
-	display: inline-block;
-	width: 400px
-	height 400px
-	background-image:url("../img/fondoServicios4_gray.png");
-	background-repeat: no-repeat
-	background-position: center center
-	background-size 100% 100%	
-	transition all 1s ease-in-out 0s
 	&:hover
 		cursor pointer
-		background-image:url("../img/fondoServicios4.png");
 	&:hover .description
 		background-color amarillo
 .boton-land
