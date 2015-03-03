@@ -1,0 +1,34 @@
+@import "normalize.styl"
+@import "nib"
+@import "nib/vendor"
+
+.zero
+	background: url("../img/zero_camina.png");
+	width: 46px;
+	height: 53px;
+	background-position:-114px -320px;
+	background-repeat: no-repeat;
+.static
+	animation: static steps(3) 1.5s infinite;
+.run
+	animation: run steps(13) 1.2s infinite;
+.espada
+	width 80px !important
+	height 80px !important
+	animation: espada steps(11) 2s infinite;
+
+@keyframes static 
+	from
+		background-position:-3px 0px;
+	to
+		background-position:-138px 0px;
+@keyframes run 
+	from
+		background-position:-88px -222px;
+	to
+		background-position:-751px -222px;
+@keyframes espada 
+	from
+		background-position:0px -276px;
+	to
+		background-position:-951px -276px;
