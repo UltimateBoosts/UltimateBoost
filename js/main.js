@@ -13,17 +13,7 @@ $(function ()
   		
   		
 	  		var scrolltop =$(this).scrollTop();
-	  		
-	  		if(scrolltop > altoServicios){
-	  			
-	  		$(".logo img").animate({ width:180, height:180 },"fast");	
-
-  			}
-  			if(scrolltop < altoServicios){
-	  			
-	  			$(".logo img").animate({ width:160, height:160 },"fast");
-
-  			}
+	  	
   			if(scrolltop > altoMenu){
 
   				$("#fixed").addClass("fixmenu-stick");

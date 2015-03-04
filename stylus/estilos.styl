@@ -5,10 +5,10 @@
 
 
 vendor-prefixes = o ms moz webkit official
-azul = #078CD3
-rojo = #FF1800
-verde = #00E232
-amarillo = #FF8B00
+azul = #1EB4DF
+rojo = #FF521B
+verde = #18E57D
+amarillo = #FF8E1B
 
 
 
@@ -155,8 +155,7 @@ body
 	background-color #f5f5f5
 	color #2e2f33
 	
-.rocket-op
-	font-size 3.5em 		
+	
 .arrow
 	position  absolute
 	bottom  0
@@ -362,7 +361,7 @@ header
 	z-index -1
 
 .home-img-src 
-	background-image:url("../img/milkyway1.jpg");
+	background-image:url("../img/milkyway1.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -406,26 +405,8 @@ header
 	position relative
 	text-align center
 	height 100%
-	background: rgba(7, 140, 211, 0.85);
-	color: rgb(239, 236, 236);
-	&::before
-		content: "";
-		background-image: url("../img/darkspace.jpg");
-		background-repeat: no-repeat;
-		background-position: center center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-moz-background-size: cover;
-		-webkit-background-size: cover;
-		background-size: cover;
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		z-index: -1;
-		background-attachment: fixed;
-	
+	background:white;
+	color:#252525
 	
 		
 
@@ -438,7 +419,9 @@ header
 
 .Text-lema 
 	h2
-		font-weight 400
+		font-weight bold
+		color #2e2f33
+		font-size 2em
 	p
 		font-weight 300
 		font-style italic
@@ -446,6 +429,11 @@ header
 		font-style: italic;
 		font-weight: 600;
 		font-size 1.2em
+		color #2e2f33
+		
+	.rocket-op
+		font-size 3.5em 
+		color #FF3D00	
 		
 		
 
@@ -453,7 +441,7 @@ header
 	overflow: hidden;
 	color white
 	position relative
-	background-image:url("../img/darkspace.jpg");
+	background-image:url("../img/milkyway1_blur.png");
 	background-repeat: no-repeat;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -468,6 +456,21 @@ header
 		height 100%
 		z-index -3
 		background: linear-gradient(rgba(6, 11, 39, 0.8),rgba(0,0,0,0));
+	.boton-serv
+		height: 36px;
+		line-height: 36px;
+		display: inline-block;
+		padding: 0 30px;
+		color: #fff;
+		font-size: 0.8125em;
+		text-align: center;
+		cursor: pointer;
+		text-decoration: none;
+		border: 0;
+		text-transform: uppercase;
+		border-radius: 3px;
+		background azul
+		font-weight bold
 .serviciosp
 	color white
 	font-weight lighter
@@ -491,8 +494,16 @@ header
 
 .servicios
 	font-size 0
+	h2
+		margin 1em
+	figure
+		margin 0
 	article
-		padding-top: 5%;
+		padding 1em
+		display inline-block
+		border-radius 50%
+		
+		
 	.description
 		width: 100%;
 		
@@ -502,8 +513,6 @@ header
 		/* padding: 68% 0; */
 		background: black;
 		transition all 0.5s ease-in-out 0s
-		p
-			padding 0 0.5em
 				
 
 .content-slide 
@@ -531,7 +540,6 @@ header
 	position: relative;
 	display: inline-block;
 	width: 400px
-	height 400px
 	background-repeat: no-repeat
 	background-position: center center
 	background-size 100% 100%
@@ -553,6 +561,9 @@ header
 		cursor pointer
 	&:hover .description
 		background-color rojo
+	article
+		background rojo
+	
 		
 			
 .branding
@@ -560,12 +571,17 @@ header
 		cursor pointer
 	&:hover .description
 		background-color verde
+	article
+		background verde
+	
 		
 .posi
 	&:hover
 		cursor pointer
 	&:hover .description
 		background-color amarillo
+	article
+		background amarillo
 .boton-land
 	border: 2px solid white;
 	padding: 0.5em 0.8em;
@@ -614,11 +630,7 @@ header
 @media screen and (max-width:1030px)
 	.contenedor-head
 		width: 100%;
-	.servicios
-		article
-			padding-top: 10%;
-		p
-			padding: 0 10%;	
+		
 
 @media screen and (max-width:800px)
 	body
@@ -686,34 +698,9 @@ header
 		img
 			width: 78px;
 			
-	.desarrolloweb
-		background-image -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/fondoServicios3.png")
-		background-image -o-linear-gradient(60deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/fondoServicios3.png")
-		background-image linear-gradient(150deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/fondoServicios3.png")
-		background-repeat: no-repeat
-		background-position: center center
-		background-size 100% 100%
-		.description
-			background rojo
-	.branding
-		background-image -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/ImgServiciosBranding2.png")
-		background-image -o-linear-gradient(60deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/ImgServiciosBranding2.png")
-		background-image linear-gradient(150deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/ImgServiciosBranding2.png")
-		background-repeat: no-repeat
-		background-position: center center
-		background-size 100% 100%
-		.description
-			background verde
-	.posi
-		background-image -webkit-linear-gradient(60deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/fondoServicios4.png")
-		background-image -o-linear-gradient(60deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/fondoServicios4.png")
-		background-image linear-gradient(150deg, rgba(0, 0, 0, 0.53) 30%, rgba(0, 0, 0, 0.44) 70%),  url("../img/fondoServicios4.png")	
-		background-repeat: no-repeat
-		background-position: center center
-		background-size 100% 100%
-		.description
-			background amarillo
-			
+	.servicios 
+		h2
+			margin 1em		
 	.desarrolloweb
 	.branding
 	.posi
