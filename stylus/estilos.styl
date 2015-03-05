@@ -439,23 +439,10 @@ header
 
 .servicios
 	overflow: hidden;
-	color white
+	color #2e2f33
 	position relative
-	background-image:url("../img/milkyway1_blur.png");
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+	background white
 
-	background-attachment: fixed;
-	z-index -3
-	&::after
-		content ""
-		background-position center center
-		height 100%
-		z-index -3
-		background: linear-gradient(rgba(6, 11, 39, 0.8),rgba(0,0,0,0));
 	.boton-serv
 		height: 36px;
 		line-height: 36px;
@@ -502,6 +489,10 @@ header
 		padding 1em
 		display inline-block
 		border-radius 50%
+		transition all .2s ease-in-out 0s
+		transform matrix(1, 0, 0, 1, 0, 0)
+		&:hover
+			transform matrix(1, 0, 0, 1, 0, -3)	
 		
 		
 	.description
@@ -543,9 +534,11 @@ header
 	background-repeat: no-repeat
 	background-position: center center
 	background-size 100% 100%
-	transition all 1s ease-in-out 0s	
+	transition all 1s ease-in-out 0s
+	transform matrix(1, 0, 0, 1, 0, 0)	
 	&:hover .glass
 		opacity 1 !important
+	
 	span
 		position: absolute;
 		top: 0;
@@ -555,10 +548,10 @@ header
 		z-index -1
 		transition all 0.35s ease-in-out 0s
 	.base
-		z-index -2	
+		z-index -2
+			
 .desarrolloweb
-	&:hover
-		cursor pointer
+	
 	&:hover .description
 		background-color rojo
 	article
@@ -567,8 +560,7 @@ header
 		
 			
 .branding
-	&:hover
-		cursor pointer
+	
 	&:hover .description
 		background-color verde
 	article
@@ -576,8 +568,7 @@ header
 	
 		
 .posi
-	&:hover
-		cursor pointer
+
 	&:hover .description
 		background-color amarillo
 	article
