@@ -11,6 +11,18 @@ verde = #149152
 amarillo = #FF8E1B
 
 
+@keyframes animacionProyectos
+
+	0%
+		opacity:0
+		transform:rotateX(90deg) translateZ(-25px) ;
+	50%	
+		opacity:1
+		transform:rotateX(0deg) translateZ(-315px) ;
+	100%
+		opacity:0
+		transform:rotateX(90deg) translateZ(-25px) ;
+
 
 @keyframes poro1
 	0%
@@ -435,7 +447,29 @@ header
 		font-size 3.5em 
 		color #FF3D00	
 		
-		
+.proyectos
+	position relative
+	background azul
+	height 100%
+	
+.leur
+	position relative
+	overflow hidden
+	width 80%
+	height 80%
+	top 10%
+	margin 0 auto
+	background-image url("../img/proyectos/leur.png")
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	opacity 0
+	transform-style: preserve-3d;
+	transform:rotateX(90deg) translateZ(-25px) ;
+	transition: all 350ms;
+	animation-name animacionProyectos
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
 
 .servicios
 	overflow: hidden;
@@ -493,6 +527,7 @@ header
 		transform matrix(1, 0, 0, 1, 0, 0)
 		&:hover
 			transform matrix(1, 0, 0, 1, 0, -3)	
+			
 		
 		
 	.description
@@ -710,7 +745,6 @@ header
 		
 
 			
-					
 		
 			
 				
