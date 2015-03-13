@@ -9,6 +9,7 @@
 	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
 	<link href='http://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400,700,400italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 
 </head>
 <body>
@@ -162,7 +163,7 @@
 			</article>
 		</div>
 	</section>
-	<section id="servicios" class="servicios modulo ">
+	<section id="servicios" class="servicios  ">
     <div class="contenedor-servi">
        
             <div class="aniServicios desarrolloweb"> 
@@ -211,7 +212,7 @@
 			</article>
 	  	</div>
 	  </section>
-	  <section class="proyectos modulo">
+	  <section class="proyectos ">
 	  	<article class="item">
 	  		<span class="glass">
 	        	<img src="img/proyectos/proyecto-leur.png"  alt="">
@@ -260,14 +261,76 @@
 				<img src="img/proyectos/proyecto-leur_g.png"  alt="">
 			</span>
 	  	</article>
-	  	 
-
+	  
 	  	
 	  </section>
   </div>
-		
-	
+	<section class="team ">
+		<h2 class="azul">Conoce al equipo</h2>
+	  	 	<div class="team-slider">
+	  	 		 <div class="swiper-container">
+			        <div class="swiper-wrapper">
+			            <div class="swiper-slide">
+			            	<img src="img/team/rod.jpg" alt="">
+			            	<div class="habilidades">
+				            	<h3 class="name">Cristian Arrieta</h3>
+									<h4 class="profecion">Co-Fundador</h4>
+									<h5>Habilidades:</h5>
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>JS</li>
+										<li>Angular.js</li>
+										<li>PHP</li>
+									</ul>
+			            	</div>
+						</div>
+			            <div class="swiper-slide">
+			            	<img src="img/team/rod.jpg" alt="">
+			            	<div class="habilidades">
+				            	<h3 class="name">William Manco</h3>
+									<h4 class="profecion">Co-Fundador</h4>
+									<h5>Habilidades:</h5>
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>JS</li>
+										<li>Angular.js</li>
+										<li>PHP</li>
+									</ul>
+			            	</div>
+			            </div>
+			            <div class="swiper-slide">Slide 3</div>
+			            <div class="swiper-slide">Slide 4</div>
+			            <div class="swiper-slide">Slide 5</div>
+			            <div class="swiper-slide">Slide 6</div>
+			            <div class="swiper-slide">Slide 7</div>
+			            <div class="swiper-slide">Slide 8</div>
+			            <div class="swiper-slide">Slide 9</div>
+			            <div class="swiper-slide">Slide 10</div>
+			        </div>
+			        
+			        <!-- Add Arrows -->
+			        <div class="swiper-button-next"></div>
+			        <div class="swiper-button-prev"></div>
+			    </div>
+	  	 	</div>
+	</section>
 <script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/lib/swiper.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+<!-- Initialize Swiper -->
+    <script>
+ var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 5000,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
 </body>
 </html>
