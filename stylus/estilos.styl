@@ -9,6 +9,15 @@ azul = #1EB4DF
 rojo = #FF241B
 verde = #149152
 amarillo = #FF8E1B
+negro = #686868;
+.azul
+	color azul
+.rojo
+	color rojo
+.amarillo
+	color amarillo
+.negro
+	color negro
 
 
 @keyframes animacionProyectos
@@ -431,7 +440,7 @@ header
 .Text-lema 
 	h2
 		font-weight bold
-		color #2e2f33
+		color negro
 		font-size 2em
 	p
 		font-weight 300
@@ -548,7 +557,7 @@ header
 	background-size 100% 100%
 	transition all 1s ease-in-out 0s
 	transform matrix(1, 0, 0, 1, 0, 0)	
-	padding 1em 0
+	padding 1em 0 4em 0
 	&:hover .glass
 		opacity 1 !important
 	
@@ -562,6 +571,8 @@ header
 		transition all 0.35s ease-in-out 0s
 	.base
 		z-index -2
+	h2
+		color negro
 			
 .desarrolloweb
 	
@@ -660,6 +671,8 @@ header
 			position absolute
 			top 0
 			left 0
+			width 100%
+			height 100%
 			img
 				width 100%
 				height 388px
@@ -668,7 +681,27 @@ header
 			z-index -1
 			transition all 0.35s ease-in-out 0s
 		.base
-			z-index -2	 	
+			z-index -2
+			
+.fondo-proyectos
+	background url("../img/milkyway1_blur.png")
+	background-repeat: no-repeat
+	background-position: center center
+	background-size 100% 100%
+	width 100%
+	background-attachment fixed
+	.proyect-desc
+		.Lema-pro
+			position relative
+			text-align center
+			height 100%
+			color:#fff
+			.Text-lema
+				padding: 6% 0;	
+			
+			h2
+				color white
+		 	
 	
 
 	
@@ -774,6 +807,8 @@ header
 			
 	.contenedor-head
 		height 50px
+	.aniServicios
+		padding 0
 		
 
 			
