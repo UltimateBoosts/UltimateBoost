@@ -416,8 +416,9 @@ header
 	&::after
 		content: " ";
 		width: 100%;
-		height: 3px;
-		bottom: 0;
+		position absolute
+		height: 2px;
+		
 		display: block;
 		background: linear-gradient(to bottom,rgba(0,0,0,.2) 0,transparent 6px,transparent 100%);
 		z-index 1
@@ -865,14 +866,17 @@ header
 				font-size: 1.8em;
 /*Footer*/
 footer
-	text-align center		
+	text-align center
+	background #f4f5f7		
 .footer
 	height auto
 	padding 1em 0
-	background white
+	
 	text-align center
 	overflow hidden
 	display inline-block
+	
+
 	ul
 		width: 155px;
 		list-style none
@@ -896,7 +900,40 @@ footer
 			font-size 16px
 				
 			
-
+.love
+	color #acb1b4
+	text-align left
+	font-size 11px
+	padding: 15px 20px;
+	text-align center
+	
+	.corazon
+		transition all 0.5s ease-in-out
+		cursor pointer
+		&:hover
+			color rojo
+	.message-love
+		margin-right 1em
+	p
+		display inline-block
+	ul
+		margin: 0 15px;
+		display inline-block
+		padding 0
+		li
+			display inline
+			&:before
+				content: '•';
+				display: inline-block;
+				width: 1em;
+				font-size: 1.25em;
+				text-align: center;
+				vertical-align: initial;
+			a
+				color: #123;
+				text-decoration: none;
+				cursor: pointer;
+				
 	
 
 		

@@ -121,6 +121,7 @@
 
 .icon-heart:before {
 	content: "\e9da";
+  margin: 0.2em;
 }
 
 .icon-cross:before {
