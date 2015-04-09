@@ -1,0 +1,168 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The big featured header on the homepage, with the site logo and description }}
+<header id="fixed" class="Header Fixed">
+                <div class="contenedor-head">
+                    
+                    <div class="Contenedor-logo">
+                            
+                                    <figure class="Logo-parte1">
+                                    
+                                        <img src="../assets/imgLogoPrueba/logoP1.png" alt="Logo Utimate Boost">
+
+                                    </figure>
+                                    <figure class="Logo-parte2">
+                                    
+                                        <img src="../assets/imgLogoPrueba/logoP2.png" alt="Logo Utimate Boost">
+
+                                    </figure>
+                                    <figure class="Logo-parte3">
+                                    
+                                        <img src="../assets/imgLogoPrueba/logoP3.png" alt="Logo Utimate Boost">
+
+                                    </figure>
+                                    <figure class="Logo-parteB">
+                                    
+                                        <img src="../assets/imgLogoPrueba/b.png" alt="Logo Utimate Boost" >
+
+                                    </figure>
+                            <div class="titulo-logo">
+                                <img src="../assets/img/titulo-logo-ultimateboost.png" alt="Titulo Logo">
+                            </div>      
+                            
+                        </div>
+                        <span class="menu-movil">
+                            
+                            <span class="col"></span>
+                            <span class="col"></span>
+                            <span class="col"></span>
+                        </span>
+                        <nav class="Menu">
+                            
+                        <ul>
+                            <li><a class="Menu-link current-link" href="">Home</a></li>
+                            <li><a class="Menu-link"  href="">Servicios</a></li>
+                            <li><a class="Menu-link"  href="">Proyectos</a></li>
+                            <li><a class="Menu-link"  href="">Blog</a></li>
+                            <li><a class="Menu-link"  href="">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                    
+                    
+            </header>
+            <header class="Header" style="position:absolute">
+                <div class="contenedor-head">
+                    
+                    <div class="Contenedor-logo">
+                            
+                                    <figure class="Logo-parte1">
+                                    
+                                        <img src="../assets/imgLogoPrueba/logoP1.png" alt="Logo Utimate Boost">
+
+                                    </figure>
+                                    <figure class="Logo-parte2">
+                                    
+                                        <img src="../assets/imgLogoPrueba/logoP2.png" alt="Logo Utimate Boost">
+
+                                    </figure>
+                                    <figure class="Logo-parte3">
+                                    
+                                        <img src="../assets/imgLogoPrueba/logoP3.png" alt="Logo Utimate Boost">
+
+                                    </figure>
+                                    <figure class="Logo-parteB">
+                                    
+                                        <img src="../assets/imgLogoPrueba/b.png" alt="Logo Utimate Boost" >
+
+                                    </figure>
+                            <div class="titulo-logo">
+                                <img src="../assets/img/titulo-logo-ultimateboost.png" alt="Titulo Logo">
+                            </div>      
+                            
+                        </div>
+                        <span class="menu-movil">
+                            
+                            <span class="col"></span>
+                            <span class="col"></span>
+                            <span class="col"></span>
+                        </span>
+                        <nav class="Menu">
+                            
+                        <ul>
+                            <li ><a class="Menu-link current-link" href="">Home</a></li>
+                            <li><a class="Menu-link"  href="">Servicios</a></li>
+                            <li><a class="Menu-link"  href="">Proyectos</a></li>
+                            <li><a class="Menu-link"  href="">Blog</a></li>
+                            <li><a class="Menu-link"  href="">Contactanos</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                    
+                    
+            </header>
+               {{#foreach posts}}
+            {{#if featured}}
+           <!--   <article class="post-preview {{post_class}}">
+                <div class="post-image {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+                </div>
+                <header class="post-header">
+                    <a href="{{url}}"><h2 class="post-title">{{{title}}}</h2></a>
+                    <span class="post-meta">{{author}} on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags seperator=" • " prefix="on "}}</span>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{excerpt}}&hellip;</p>
+                </section>
+            </article> 
+        -->
+
+
+            <div class="site-head" style="{{#if image}}background-image: url({{image}}){{/if}}">
+                <div class="verticle">
+                    <!---{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" class="full-img"></a>{{/if}}-->
+                     <a href="{{url}}"><h2 class="post-title">{{{title}}}</h2></a>
+                     <span class="post-meta">{{author}} on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags seperator=" • " prefix="on "}}</span>
+                       <section class="post-excerpt">
+                    <p>{{excerpt}}&hellip;</p>
+                </section>
+                </div>
+            </div>
+
+            {{/if}}
+            {{/foreach}}
+
+
+{{! The main content area on the homepage }}
+<main class="content" role="main">
+    <div class="pane">
+        <section class="posts strip clearfix">
+
+            {{! Each post will be output using this markup }}
+         
+         
+
+            {{#foreach posts}}
+            {{#unless featured}}
+             <article class="post-preview {{post_class}}">
+                <div class="post-image {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+                </div>
+                <header class="post-header">
+                    <a href="{{url}}"><h2 class="post-title">{{{title}}}</h2></a>
+                    <span class="post-meta">{{author}} on <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags seperator=" • " prefix="on "}}</span>
+                </header>
+                <section class="post-excerpt">
+                    <p>{{excerpt}}&hellip;</p>
+                </section>
+            </article>
+            {{/unless}}
+            {{/foreach}}
+
+            {{!! After all the posts, we have the previous/next pagination links }}
+            {{pagination}}
+
+        </section>
+    </div>
+</main>
