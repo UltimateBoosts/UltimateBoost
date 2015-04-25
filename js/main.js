@@ -1,8 +1,6 @@
 $(function ()
 	{
-		
-
-		
+			
 		var altoPantalla =screen.height;
 		var altoMenu=altoPantalla-125;
 		var calculoAltoServicios = (altoPantalla*53)/100;
@@ -26,4 +24,11 @@ $(function ()
   			}
   		
   		})
+
+  	$('.Menu-link').click(function(e) {
+						e.preventDefault();
+						pag= $(this).attr("href");
+						
+                        $('body,html').animate({scrollTop: $(pag).offset().top },"slow");
+                    });
 	});
